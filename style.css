@@ -1,0 +1,84 @@
+.contentItem{
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  background-color: #FFF;
+  color: ##5d5b59;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 2.5vmin;
+  grid-row-gap: 3vmin;
+  grid-template-areas:
+  "header header . . . . ."
+  ". . . contentTitle . . ."
+  ". . . name . . ."
+  ". . . title . . ."
+  ". . . years . . ."
+  ". . desc desc desc . .";
+  border: solid #2d132c;
+  border-width: 50px;
+}
+
+#MeetSpark{
+  grid-area: header;
+  padding-left: 30px;
+  color: #801336;
+}
+
+#title{
+  margin-left: 30px;
+  color: #2d132c;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+.contentTitle{
+  grid-area: contentTitle;
+  display: flex;
+  justify-content: center;
+}
+
+.Name{
+  grid-area: name;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.titlePosition{
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.Years{
+  grid-area: years;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.Description{
+  grid-area: desc;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 25px;
+
+}
